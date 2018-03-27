@@ -18,8 +18,8 @@ spring:
     username: root
     password: 1
     driver-class-name: com.mysql.jdbc.Driver
-    initialSize: 2
-    minIdle: 2
+    initialSize: 1
+    minIdle: 1
     maxActive: 20
     maxWait: 60000
     timeBetweenEvictionRunsMillis: 60000
