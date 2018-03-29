@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    userCenter:
+      path: /userCenter/**
+      serviceId: users
+      sensitiveHeaders: 
