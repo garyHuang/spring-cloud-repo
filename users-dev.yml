@@ -4,8 +4,8 @@ spring:
   rabbitmq:
     host: eureka.gary.com
     port: 5672
-    username: guest
-    password: guest
+    username: mq
+    password: 123456
   cloud:
     config:
       discovery:
