@@ -2,10 +2,10 @@ spring:
   application:
     name: users
   rabbitmq:
-    host: 10.0.0.104
+    host: eureka.gary.com
     port: 5672
-    username: admin
-    password: 123456
+    username: guest
+    password: guest
   cloud:
     config:
       discovery:
@@ -14,7 +14,7 @@ spring:
       profile: dev
       
   datasource: 
-    url: jdbc:mysql://127.0.0.1:3306/job?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://eureka.gary.com:3306/job?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: 1
     driver-class-name: com.mysql.jdbc.Driver
