@@ -2,7 +2,7 @@ spring:
   application:
     name: users
   rabbitmq:
-    host: eureka.gary.com
+    host: mq
     port: 5672
     username: mq
     password: 123456
@@ -14,7 +14,7 @@ spring:
       profile: dev
       
   datasource: 
-    url: jdbc:mysql://eureka.gary.com:3306/job?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://mysql:3306/job?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: 1
     driver-class-name: com.mysql.jdbc.Driver
@@ -32,7 +32,8 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     initialize: true
     continueOnError: true
-
+    schema: classpath:create.sql
+    
 logging:
   level:
     org.springframework.cloud.netflix.feign: debug
